@@ -1,0 +1,84 @@
+Issue Type,Summary,Description,Priority,Labels
+Story,"RF-01 | Ingresar y validar expresión lógica","Como estudiante, quiero ingresar una expresión lógica para solicitar su resolución.
+
+Criterios de aceptación:
+- Si ingreso una expresión con estructura válida, el sistema la acepta para continuar con su resolución.
+- Si envío el campo vacío, el sistema solicita que introduzca una expresión.
+- Si la estructura no es válida, el sistema muestra un mensaje de error.
+
+Trazabilidad: RF-01, CU-01.",High,"epica-entrada-expresiones,rf-01,cu-01"
+Story,"RF-02 | Mostrar simplificación paso a paso","Como estudiante, quiero ver cómo se simplifica una expresión válida para comprender el procedimiento y su resultado.
+
+Criterios de aceptación:
+- Al solicitar la simplificación de una expresión válida, el sistema analiza y procesa la expresión.
+- El sistema presenta los pasos realizados y la expresión simplificada.
+- Si no puede procesar la expresión, informa el problema.
+- Si la expresión ya está simplificada, muestra el resultado correspondiente.
+
+Trazabilidad: RF-02, CU-02.",High,"epica-resolucion,rf-02,cu-02"
+Story,"RF-03 | Explicar cada paso de la resolución","Como estudiante, quiero consultar una explicación asociada a cada paso para comprender el procedimiento aplicado.
+
+Criterios de aceptación:
+- Después de procesar una expresión, puedo consultar los pasos en el orden en que se realizaron.
+- Cada paso mostrado tiene una explicación asociada.
+- Si todavía no existe un procedimiento, el sistema indica que primero debe procesarse una expresión válida.
+
+Trazabilidad: RF-03, CU-03.",High,"epica-resolucion,rf-03,cu-03"
+Story,"RF-04 | Generar y mostrar la tabla de verdad","Como estudiante, quiero generar la tabla de verdad de una expresión lógica para revisar su evaluación.
+
+Criterios de aceptación:
+- Para una expresión válida, el sistema identifica sus variables y determina las combinaciones posibles de valores.
+- El sistema evalúa la expresión para cada combinación y muestra la tabla resultante.
+- Si la expresión no es válida o no se detectan correctamente sus variables, el sistema informa el problema y no presenta una tabla incorrecta.
+
+Trazabilidad: RF-04, CU-04.",High,"epica-resultados,rf-04,cu-04"
+Story,"RF-05 | Identificar las compuertas lógicas","Como estudiante, quiero ver qué compuertas corresponden a los operadores de mi expresión para relacionar la expresión con la lógica digital.
+
+Criterios de aceptación:
+- Para una expresión válida, el sistema analiza sus operadores, determina las compuertas correspondientes y las muestra.
+- Si encuentra operadores no reconocidos o una expresión inválida, informa que debe corregirse o que no puede identificar las compuertas correctamente.
+
+Trazabilidad: RF-05, CU-05.",Medium,"epica-resultados,rf-05,cu-05"
+Story,"RF-06 | Consultar el resultado final","Como estudiante, quiero consultar el resultado final de una expresión procesada para conocer el valor obtenido.
+
+Criterios de aceptación:
+- Después de resolver una expresión, el sistema permite consultar y muestra el resultado final obtenido.
+- Si todavía no existe un resultado de una expresión procesada, el sistema indica que primero debe resolverse.
+
+Trazabilidad: RF-06, CU-06.",High,"epica-resultados,rf-06,cu-06"
+Task,"RNF-01 | Presentar la resolución de forma clara y ordenada","Asegurar que la resolución se presente de manera clara, ordenada y comprensible para el estudiante.
+
+Criterios de aceptación:
+- La expresión, los pasos de simplificación, sus explicaciones y el resultado se distinguen y aparecen en un orden comprensible.
+- La presentación se revisa con usuarios o con un criterio de revisión acordado por el equipo antes de dar la tarea por terminada.
+
+Trazabilidad: RNF-01.",High,"epica-experiencia,rnf-01"
+Task,"RNF-02 | Cumplir el tiempo de respuesta","Mantener el tiempo de respuesta para mostrar el resultado en un máximo de tres segundos bajo condiciones normales de uso.
+
+Criterios de aceptación:
+- El resultado se muestra en no más de tres segundos bajo las condiciones normales acordadas.
+- Antes de validar el criterio, el equipo documenta el entorno de medición y el tipo/tamaño de expresión utilizado, ya que el ERS no define esas condiciones.
+
+Trazabilidad: RNF-02.",Medium,"epica-rendimiento,rnf-02"
+Task,"RNF-03 | Mantener consistencia en los resultados","Asegurar que una misma expresión ingresada correctamente produzca resultados consistentes.
+
+Criterios de aceptación:
+- Al procesar repetidamente la misma expresión con la misma configuración, el resultado es consistente.
+- La revisión incluye comparar el resultado con los pasos de simplificación y la tabla de verdad cuando estén disponibles.
+
+Trazabilidad: RNF-03.",High,"epica-calidad,rnf-03"
+Task,"RNF-04 | Dar soporte a navegadores y dispositivos","Permitir el uso en navegadores web actuales desde computadoras y dispositivos móviles.
+
+Criterios de aceptación:
+- La herramienta puede utilizarse desde computadoras y dispositivos móviles en la matriz de navegadores actuales acordada por el equipo.
+- La matriz de navegadores y dispositivos objetivo queda documentada antes de cerrar la validación; el ERS no especifica versiones concretas.
+
+Trazabilidad: RNF-04.",Medium,"epica-compatibilidad,rnf-04"
+Task,"RNF-05 | Mantener legibles los controles y resultados","Usar textos, controles y elementos visuales legibles para que el estudiante pueda identificar las operaciones, los resultados y los pasos de resolución.
+
+Criterios de aceptación:
+- Los textos y controles necesarios para ingresar y procesar expresiones son legibles.
+- Los pasos, operaciones y resultados pueden distinguirse visualmente en las pantallas soportadas.
+- El equipo acuerda y registra cómo revisará la legibilidad; el ERS no establece una norma de accesibilidad específica.
+
+Trazabilidad: RNF-05.",High,"epica-experiencia,rnf-05"

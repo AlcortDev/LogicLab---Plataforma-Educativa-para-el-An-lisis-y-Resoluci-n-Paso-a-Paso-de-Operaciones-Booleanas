@@ -1,0 +1,7 @@
+.git
+.next
+node_modules
+Backlog
+*.pdf
+.directory
+REGISTRO_CONEXION_GITHUB.md
